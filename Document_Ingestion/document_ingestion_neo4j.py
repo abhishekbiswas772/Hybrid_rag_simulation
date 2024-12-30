@@ -8,6 +8,8 @@ from pathlib import Path
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
 
+os.environ['OPENAI_API_KEY'] = "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"
+ 
 class Neo4JDocumentManager:
     def __init__(self):
         self.graph = neo4j_graph.Neo4jGraph(
