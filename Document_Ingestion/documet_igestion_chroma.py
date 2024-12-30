@@ -9,9 +9,6 @@ import os
 from dotenv import load_dotenv
 
 
-load_dotenv()
-os.environ['OPENAI_API_KEY'] = "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"
-
 class ChromaDocumentManager:
     def __init__(self):
         self.llm = ChatOpenAI(model="gpt-3.5-turbo")
